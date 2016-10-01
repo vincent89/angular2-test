@@ -1,11 +1,20 @@
 import { Component } from '@angular/core';
+import { StateService } from 'app/common/state.service';
 
 @Component({
-    selector: 'banner',
-    templateUrl: 'app/banner/banner.component.html'
+    selector:       'banner',
+    templateUrl:    'app/banner/banner.component.html'
+    providers: [StateService]
 })
 export class BannerComponent {
-    constructor() {
+    body:           string = 'This is the about home body';
+    message:        string;
 
+    constructor(private stateService: StateService) {
+
+    }
+
+    ngOnInit() {
+        this.message = this.stateService.getMessage();
     }
 }
