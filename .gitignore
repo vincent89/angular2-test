@@ -1,4 +1,5 @@
 node_modules
+.idea/*
 .DS_Store
 .recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_0.fdt
 .recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_0.fdx
