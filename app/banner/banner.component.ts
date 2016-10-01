@@ -3,7 +3,7 @@ import { StateService } from 'app/common/state.service';
 
 @Component({
     selector:       'banner',
-    templateUrl:    'app/banner/banner.component.html'
+    templateUrl:    'app/banner/banner.component.html',
     providers: [StateService]
 })
 export class BannerComponent {
@@ -16,5 +16,9 @@ export class BannerComponent {
 
     ngOnInit() {
         this.message = this.stateService.getMessage();
+    }
+
+    updateMessage(m: string): void {
+        this.stateService.setMessage(m);
     }
 }

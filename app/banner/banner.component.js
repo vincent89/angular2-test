@@ -18,6 +18,9 @@ var BannerComponent = (function () {
     BannerComponent.prototype.ngOnInit = function () {
         this.message = this.stateService.getMessage();
     };
+    BannerComponent.prototype.updateMessage = function (m) {
+        this.stateService.setMessage(m);
+    };
     BannerComponent = __decorate([
         core_1.Component({
             selector: 'banner',

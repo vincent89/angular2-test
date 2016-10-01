@@ -7,6 +7,7 @@ export class StateService {
         return this.message;
     };
     setMessage(newMessage: string): void {
+        console.error('setting message' + newMessage);
         this.message = newMessage;
     };
 }

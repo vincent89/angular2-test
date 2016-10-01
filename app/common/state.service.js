@@ -18,6 +18,7 @@ var StateService = (function () {
     };
     ;
     StateService.prototype.setMessage = function (newMessage) {
+        console.error('setting message' + newMessage);
         this.message = newMessage;
     };
     ;
